@@ -72,6 +72,10 @@ img {
     cursor: pointer;
 }
 
+section {
+    margin-top: 130px;
+}
+
 /* header styles starts */
 #header {
     padding: 50px 0;
@@ -126,17 +130,61 @@ img {
 
 /* header styles ends */
 
+/* main part styles starts */
+
+/* features-quick-list styles here */
+.features-quick-list{
+    margin-top: 85px;
+}
+.features-quick-list>.row {
+    gap: 72px;
+}
+
+.features-quick-gallery {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+.features-quick-info {
+    width: 50%;
+}
+
+.features-quick-info h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark);
+}
+.features-quick-info h2 .color-light-gray{
+    color: var(--light-gray);
+}
+.features-quick-info h2 .color-yallow{
+    color: var(--yallow);
+}
+.features-quick-info p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: var(--light-gray);
+margin: 24px 0 32px 0;
+}
+
+/* main part styles ends */
 
 /*==================
  responsive part here 
 ====================*/
 /* mobile device styles here */
 @media only screen and (max-width:576px) {
+
     /* common */
     .btn-primary {
         padding: 16px 20px 17px 21px;
         font-size: 14px;
     }
+
     /* header  */
     #header {
         padding: 30px 0;
@@ -171,8 +219,36 @@ img {
         font-size: 40px;
         line-height: 54px;
     }
+
     .banner-description {
         font-size: 14px;
         margin: 16px 10px;
+    }
+    /* main */
+    /* features-quick-list */
+    .features-quick-list{
+        padding: 0 15px;
+    }
+    .features-quick-list > .row{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .features-quick-gallery,
+    .features-quick-info{
+        width: 100%;
+    }
+    .features-quick-gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features-quick-info{
+        text-align: center;
+    }
+    .features-quick-info h2{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .features-quick-info p{
+        margin: 17px 0;
+        font-size: 14px;
     }
 }
