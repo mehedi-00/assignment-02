@@ -133,9 +133,10 @@ section {
 /* main part styles starts */
 
 /* features-quick-list styles here */
-.features-quick-list{
+.features-quick-list {
     margin-top: 85px;
 }
+
 .features-quick-list>.row {
     gap: 72px;
 }
@@ -157,18 +158,107 @@ section {
     line-height: 53px;
     color: var(--dark);
 }
-.features-quick-info h2 .color-light-gray{
+
+.features-quick-info h2 .color-light-gray {
     color: var(--light-gray);
 }
-.features-quick-info h2 .color-yallow{
+
+.features-quick-info h2 .color-yallow {
     color: var(--yallow);
 }
-.features-quick-info p{
+
+.features-quick-info p {
     font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-color: var(--light-gray);
-margin: 24px 0 32px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light-gray);
+    margin: 24px 0 32px 0;
+}
+
+/* features-love-enjoy styles here */
+.features-love-enjoy>.row {
+    gap: 54px;
+}
+
+.features-love-enjoy-details,
+.features-love-enjoy-thumbnail {
+    width: 50%;
+}
+
+.features-love-enjoy-details {
+    padding: 20px 0px 20px 0;
+}
+
+.features-love-enjoy-details h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark);
+    padding: 10px 50px 10px 20px;
+    border-left: 5px solid var(--yallow);
+}
+
+.features-love-enjoy-details>p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light-gray);
+    margin: 30px 0;
+}
+
+.features-love-enjoy-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-love-enjoy-info-list {
+    padding: 30px 42px 30px 30px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.features-love-enjoy-info-list h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--dark);
+}
+
+.features-love-enjoy-info-list p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light-gray);
+    margin-top: 10px;
+}
+
+.features-love-enjoy-thumbnail {
+    padding-left: 92px;
+    padding-bottom: 77px;
+    position: relative;
+}
+
+.btn-features {
+    padding: 45px 42px;
+    background-color: var(--yallow);
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.btn-features span {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    display: block;
 }
 
 /* main part styles ends */
@@ -183,6 +273,10 @@ margin: 24px 0 32px 0;
     .btn-primary {
         padding: 16px 20px 17px 21px;
         font-size: 14px;
+    }
+
+    section {
+        margin-top: 50px;
     }
 
     /* header  */
@@ -224,31 +318,79 @@ margin: 24px 0 32px 0;
         font-size: 14px;
         margin: 16px 10px;
     }
+
     /* main */
     /* features-quick-list */
-    .features-quick-list{
+    .features-quick-list {
         padding: 0 15px;
     }
-    .features-quick-list > .row{
+
+    .features-quick-list>.row {
         flex-direction: column;
         gap: 30px;
     }
+
     .features-quick-gallery,
-    .features-quick-info{
+    .features-quick-info {
         width: 100%;
     }
-    .features-quick-gallery{
-        grid-template-columns: repeat(1,1fr);
+
+    .features-quick-gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .features-quick-info{
+
+    .features-quick-info {
         text-align: center;
     }
-    .features-quick-info h2{
+
+    .features-quick-info h2 {
         font-size: 30px;
         line-height: 45px;
     }
-    .features-quick-info p{
+
+    .features-quick-info p {
         margin: 17px 0;
         font-size: 14px;
+    }
+
+    /* features-love-enjoy */
+    .features-love-enjoy {
+        padding: 0 20px;
+    }
+
+    .features-love-enjoy>.row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .features-love-enjoy-details,
+    .features-love-enjoy-thumbnail {
+        width: 100%;
+    }
+
+    .features-love-enjoy-details h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .features-love-enjoy-details>p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 0 10px;
+    }
+    .features-love-enjoy-info-list p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .features-love-enjoy-thumbnail {
+        padding-left: 60px;
+        padding-bottom: 50px;
+    }
+    .btn-features {
+        padding: 35px 25px;
+        font-size: 48px;
+    }
+    .btn-features span {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
