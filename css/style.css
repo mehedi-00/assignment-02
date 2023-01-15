@@ -258,6 +258,7 @@ section {
     font-size: 25px;
     line-height: 40px;
     display: block;
+    text-align: center;
 }
 
 /* some-fact styles here */
