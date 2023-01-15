@@ -73,7 +73,7 @@ img {
 }
 
 section {
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 /* header styles starts */
@@ -295,9 +295,8 @@ section {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     position: relative;
-    transition: transform .7s cubic-bezier(.4, .2,
-            .2, 1);
-    -webkit-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    transition:box-shadow .5s ease, transform .7s cubic-bezier(.4, .2,.2, 1);
+    -webkit-transition:box-shadow .5s ease, transform .7s cubic-bezier(.4, .2,.2, 1);
 }
 
 
@@ -362,7 +361,7 @@ section {
 }
 .testimonial {
     border-right: 4px solid var(--yallow);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     padding: 30px 30px 30px 130px;
     margin: 0 15px 30px 15px;
     overflow: hidden;
@@ -419,7 +418,7 @@ section {
     margin: 0;
   }
   .testimonial .post {
-    display: inline-block;
+    display: block;
     font-size: 17px;
     color: var(--yallow);
     font-style: italic;
@@ -430,7 +429,7 @@ section {
 /* footer style starts */
 
 #footer{
-    margin-top: 130px;
+    margin-top: 80px;
     background-color: var(--bg-color);
     padding: 40px 0;
 }
@@ -446,6 +445,7 @@ color: var(--dark);
 /*==================
  responsive part here 
 ====================*/
+
 /* mobile device styles here */
 
 @media only screen and (max-width:576px) {
@@ -524,6 +524,7 @@ color: var(--dark);
 
     .features-quick-gallery {
         grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
     }
 
     .features-quick-info {
@@ -634,6 +635,9 @@ color: var(--dark);
         grid-column-gap: 0px;
         grid-row-gap: 50px;
     }
+    .sponspor-item img{
+        width: 70%;
+    }
     /* footer */
     #footer{
         margin-top: 50px;
@@ -650,3 +654,4 @@ color: var(--dark);
         font-size: 13px;
     }
 }
+
