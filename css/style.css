@@ -7,7 +7,7 @@
     --dark: #131313;
     --light-gray: #727272;
     --yallow: #FF900E;
-    --header-bg-color: rgba(255, 144, 14, 0.1);
+    --bg-color: rgba(255, 144, 14, 0.1);
 }
 
 /* common classes */
@@ -79,7 +79,7 @@ section {
 /* header styles starts */
 #header {
     padding: 50px 0;
-    background-color: var(--header-bg-color);
+    background-color: var(--bg-color);
 }
 
 /* nav styles here */
@@ -354,10 +354,27 @@ section {
 
 /* main part styles ends */
 
+/* footer style starts */
+
+#footer{
+    margin-top: 130px;
+    background-color: var(--bg-color);
+    padding: 40px 0;
+}
+#footer p{
+    font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: var(--dark);
+}
+
+/* footer style ends */
+
 /*==================
  responsive part here 
 ====================*/
 /* mobile device styles here */
+
 @media only screen and (max-width:576px) {
 
     /* common */
@@ -544,4 +561,13 @@ section {
         grid-column-gap: 0px;
         grid-row-gap: 50px;
     }
+    /* footer */
+    #footer{
+        margin-top: 50px;
+    }
+    #footer p{
+        font-size: 15px;
+        padding: 0 30px;
+    }
+    
 }
