@@ -330,7 +330,7 @@ section {
 }
 
 /* sesction-info styles here */
-.our-sponspors {
+.our-sponspors, .our-testimonals {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,6 +351,79 @@ section {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
+/* testimonals style starts*/
+.our-testimonals .sesction-info{
+    text-align: center;
+}
+.testimonals{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+.testimonial {
+    border-right: 4px solid var(--yallow);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  .testimonial:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid var(--yallow);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+  }
+  .testimonial:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid var(--yallow);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+  }
+  .testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+  }
+  .testimonial .pic img {
+    width: 100%;
+    height: auto;
+  }
+  .testimonial .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--light-gray);
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .testimonial .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dark);
+    margin: 0;
+  }
+  .testimonial .post {
+    display: inline-block;
+    font-size: 17px;
+    color: var(--yallow);
+    font-style: italic;
+  }
 
 /* main part styles ends */
 
@@ -569,5 +642,11 @@ color: var(--dark);
         font-size: 15px;
         padding: 0 30px;
     }
-    
+    /* testimonals */
+    .testimonals{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .testimonial .description{
+        font-size: 13px;
+    }
 }
