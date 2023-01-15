@@ -261,6 +261,74 @@ section {
     display: block;
 }
 
+/* some-fact styles here */
+.fact-info {
+    width: 542px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark);
+}
+
+.section-description {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light-gray);
+    margin-top: 30px;
+}
+
+.fact-items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.fact-item {
+    padding: 45px 35px 59px 35px;
+    border: 1px solid var(--yallow);
+    text-align: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    position: relative;
+    transition: transform .7s cubic-bezier(.4, .2,
+            .2, 1);
+    -webkit-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+
+.fact-item:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.fact-item img {
+    width: 40px;
+}
+
+.fact-item h4 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark);
+    margin: 10px 0;
+}
+
+.fact-item p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--light-gray);
+}
+
 /* main part styles ends */
 
 /*==================
@@ -372,25 +440,72 @@ section {
         font-size: 30px;
         line-height: 40px;
     }
+
     .features-love-enjoy-details>p {
         font-size: 14px;
         line-height: 24px;
         padding-left: 0 10px;
     }
+
     .features-love-enjoy-info-list p {
         font-size: 14px;
         line-height: 23px;
     }
+
     .features-love-enjoy-thumbnail {
         padding-left: 60px;
         padding-bottom: 50px;
     }
+
     .btn-features {
         padding: 35px 25px;
         font-size: 48px;
     }
+
     .btn-features span {
         font-size: 20px;
         line-height: 30px;
     }
+
+    /* some-fact */
+    .fact-info {
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 14px;
+    }
+
+    .fact-items {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: stretch;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .fact-item {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+}
+
+    .fact-item:hover {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
 }
